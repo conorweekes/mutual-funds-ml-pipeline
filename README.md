@@ -10,7 +10,7 @@ The processed version of the dataset is stored separate "Sharded/" folder in the
 
 The link can be found here: https://console.cloud.google.com/storage/browser/conor-weekes-data-20084449
 
-
+![Database object storage decision](./3%20Database%20object%20storage%20decision.png)
 
 4. Database / object storage decision
 For this project I will use Google Cloud Storage instead of a database. The project mainly uses one CSV dataset which is stored in GSCV bucket (https://storage.googleapis.com/conor-weekes-data-20084449/raw/MutualFunds.csv).
