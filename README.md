@@ -21,4 +21,3 @@ I used Google Cloud Storage versioning rather than keeping separate copies of th
 6. Data access
 I split the dataset into 80% training data, 10% development data and 10% test data. I then compared the distribution of fund_category across the three datasets to check that the different fund categories remained represented at similar proportions. To reduce the risk of data leakage, I kept the test data separate from the training process.
 
-
