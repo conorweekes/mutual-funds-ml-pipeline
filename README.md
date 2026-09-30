@@ -16,7 +16,7 @@ The link can be found here: https://console.cloud.google.com/storage/browser/con
 
 3. Database / object storage decision
 
-For this project I will use Google Cloud Storage instead of a database. The project mainly uses one CSV dataset which is stored in GSC bucket (https://storage.googleapis.com/conor-weekes-data-20084449/raw/MutualFunds.csv).
+For this project I will use Google Cloud Storage instead of a database. The project mainly uses one CSV dataset which is stored in GCS bucket (https://storage.googleapis.com/conor-weekes-data-20084449/raw/MutualFunds.csv).
 
 4. Data versioning
 
