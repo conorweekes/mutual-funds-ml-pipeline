@@ -53,3 +53,7 @@ Kaggle Link:
 https://www.kaggle.com/datasets/stefanoleone992/mutual-funds-and-etfs?resource=download&select=MutualFunds.csv
 
 10. Reproducibility of preprocessing
+
+The preprocessing steps can be reproduced using my Jupyter notebook [View the preprocessing notebook](https://github.com/conorweekes/mutual-funds-ml-pipeline/blob/main/MutualFunds_Data_Pipeline.ipynb).
+The notebook removes rows with missing fund_category values and removes fund categories containing fewer than 10 funds. The remaining data is split into 80% training, 10% development and 10% test data using random_state=42. The split is stratified by fund_category.
+Eight cross validation folds are then created from the training data. The train, development, test and cross validation files are saved as CSV files and uploaded to the sharded/ folder in Google Cloud Storage.
