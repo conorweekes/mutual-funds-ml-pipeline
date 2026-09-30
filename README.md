@@ -8,7 +8,7 @@ The link can be found here: https://storage.googleapis.com/conor-weekes-data-200
 
 2. Processed data storage and file formats
 
-The processed version of the dataset is stored separate "sharded/" folder in the same Google Cloud Storage bucket. The original dataset is stored as a CSV file. After preprocessing, I plan to store the processed dataset in Parquet format.
+The processed version of the dataset is stored in a separate "sharded/" folder in the same Google Cloud Storage bucket. The original dataset is stored as a CSV file. After preprocessing, I plan to store the processed dataset in Parquet format.
 
 The link can be found here: https://console.cloud.google.com/storage/browser/conor-weekes-data-20084449
 
@@ -20,7 +20,7 @@ For this project I will use Google Cloud Storage instead of a database. The proj
 
 4. Data versioning
 
-For this project, Google Cloud Storage versioning allows older versions to be recovered if files are overwritten.
+For this project, Google Cloud Storage versioning is enabled so that older versions of files can be recovered if they are overwritten. Google Cloud Storage assigns each version a generation number, which can be used to identify and restore previous versions when required.
 
 5. Data access
 
@@ -58,6 +58,6 @@ https://www.kaggle.com/datasets/stefanoleone992/mutual-funds-and-etfs?resource=d
 
 10. Reproducibility of preprocessing
 
-The preprocessing steps can be reproduced the Jupyter notebook [(View Notebook Here)](https://github.com/conorweekes/mutual-funds-ml-pipeline/blob/main/MutualFunds_Data_Pipeline.ipynb).
+The preprocessing steps can be reproduced in the Jupyter notebook [(View Notebook Here)](https://github.com/conorweekes/mutual-funds-ml-pipeline/blob/main/MutualFunds_Data_Pipeline.ipynb).
 The notebook removes rows with missing fund_category values and removes fund categories containing fewer than 10 funds. The remaining data is split into 80% training, 10% development and 10% test data using random_state=42. The split is stratified by fund_category.
 Eight cross validation folds are then created from the training data. The train, development, test and cross validation files are saved as CSV files and uploaded to the sharded/ folder in Google Cloud Storage.
