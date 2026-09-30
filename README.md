@@ -18,15 +18,15 @@ The link can be found here: https://console.cloud.google.com/storage/browser/con
 
 For this project I will use Google Cloud Storage instead of a database. The project mainly uses one CSV dataset which is stored in GSC bucket (https://storage.googleapis.com/conor-weekes-data-20084449/raw/MutualFunds.csv).
 
-5. Data versioning
+4. Data versioning
 
 For this project, Google Cloud Storage versioning allows older versions to be recovered if files are overwritten.
 
-7. Data access
+5. Data access
 
 I accessed Google Cloud Storage from Google Colab using Google authentication. This allowed the notebook to access the bucket without storing passwords or service account keys directly in the notebook. 
 
-8. Data split / validation strategy
+6. Data split / validation strategy
 
 I split the dataset into 80% training data, 10% development data and 10% test data. I then compared the distribution of fund_category across the three datasets to check that the different fund categories remained represented at similar proportions. To reduce the risk of data leakage, I kept the test data separate from the training process. I also created 8 cross validation folds from the training data only, using fund_category for stratification and random_state=42.
 
