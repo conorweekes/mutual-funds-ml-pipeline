@@ -48,6 +48,8 @@ The dataset used for this project was obtained from the Kaggle Mutual Funds data
 
 The raw dataset can be accessed here:
 https://storage.googleapis.com/conor-weekes-data-20084449/raw/MutualFunds.csv
-Kaggle Link: https://www.kaggle.com/datasets/stefanoleone992/mutual-funds-and-etfs?resource=download&select=MutualFunds.csv
+
+Kaggle Link:
+https://www.kaggle.com/datasets/stefanoleone992/mutual-funds-and-etfs?resource=download&select=MutualFunds.csv
 
 10. Reproducibility of preprocessing
